@@ -1,0 +1,23 @@
+#include <stdio.h>
+int imin(int m, int n);
+int main(viod)
+{
+    int Q1,Q2;
+    printf("Input a pair of numbers or q to quit.\n");
+    while(scanf("%d %d",&Q1,&Q2)==2)
+    {
+        printf("The smaller one of %d and %d is %d.\n",Q1,Q2,imin(Q1,Q2));
+        printf("Input a pair of numbers or q to quit.\n");
+    }
+    printf("Ha Ha~~~\n");
+    return 0;
+}
+int imin(int x, int y)
+{
+    int min;
+    if(x>y)
+        min=y;
+    else
+        min=x;
+    return min;
+}
